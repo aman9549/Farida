@@ -1,0 +1,64 @@
+---
+import Image from "astro/components/Image.astro";
+import image1 from "../images/slide-1.jpg";
+import image2 from "../images/slide-2.jpg";
+import Button from "../utility/Button.astro";
+import { Carousel } from "webcoreui/astro";
+---
+
+<main class="relative overflow-hidden">
+  <Carousel items={2} >
+    <li>
+      <div class="hero-image relative">
+        <div
+          class="absolute flex text-center md:text-left flex-col items-center md:items-start 
+          top-[50%] w-full md:w-[60%] lg:w-[40%] px-4 md:px-0 translate-y-[-50%] 
+          left-0 md:left-[10%] lg:left-[15%] gap-2 md:gap-4"
+        >
+          <p class="text-base md:text-lg text-slate-800 font-bold tracking-widest">
+          Farida's Makeup Studio
+          </p>
+          <h1 class="text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-medium font-serif italic text-neutral-800">
+            Full-Service
+          </h1>
+          <p class="text-sm md:text-base font-medium text-slate-600 leading-6 md:leading-8 max-w-xs md:max-w-none">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
+            Lorem ipsum dolor sit amet consectetur. voluptates expedita!
+          </p>
+          <Button title="View Services" />
+        </div>
+        <Image 
+          src={image1} 
+          class="h-[60vh] md:h-screen w-full object-cover" 
+          alt={"Hero Image"} 
+        />
+      </div>
+    </li>
+    <li>
+      <div class="hero-image relative">
+        <div
+          class="absolute flex text-center md:text-right flex-col items-center md:items-end 
+          top-[50%] w-full md:w-[60%] lg:w-[40%] px-4 md:px-0 translate-y-[-50%] 
+          right-0 md:right-[10%] lg:right-[15%] gap-2 md:gap-4"
+        >
+          <p class="text-base md:text-lg text-slate-800 font-bold tracking-widest">
+            Farida's Makeup Studio
+          </p>
+          <h1 class="text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-medium font-serif italic text-neutral-800">
+            Full-Service
+          </h1>
+          <p class="text-sm md:text-base font-medium text-slate-600 leading-6 md:leading-8 max-w-xs md:max-w-none">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
+            Lorem ipsum dolor sit amet consectetur. voluptates expedita!
+          </p>
+          <Button title="View Services" />
+        </div>
+        <Image 
+          src={image2} 
+          class="h-[60vh] md:h-screen w-full object-cover" 
+          alt={"Hero Image"} 
+        />
+      </div>
+    </li>
+  </Carousel>
+</main>

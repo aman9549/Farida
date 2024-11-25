@@ -1,0 +1,182 @@
+---
+// import { Image } from "astro:assets";
+// import image1 from "../../src/assets/slide1.jpg"; // Adjust the path based on your folder structure
+import Image from "astro/components/Image.astro";
+import image1 from "../images/s1.svg";
+import image2 from "../images/hair.svg";
+import image3 from "../images/s2.svg";
+
+---
+
+<div class="container mx-auto px-4 py-6 md:py-10">
+  <div class="mb-5 border-b flex flex-col items-start py-5">
+    <h1 class="text-2xl md:text-3xl font-bold mb-1 text-neutral-800 font-serif italic">Services</h1>
+    <p class="text-sm md:text-base text-neutral-600">
+      For more information or to schedule a consultation, please contact us.
+    </p>
+  </div>
+
+  <div class="flex flex-col md:flex-row items-center justify-center gap-5 py-5 md:py-10">
+    <!-- Hair Services Card -->
+    <div class="w-full md:w-1/3 h-72 relative bg-neutral-100 mb-4 md:mb-0 hover:shadow-lg transition-shadow">
+      <div class="absolute right-0 p-4 opacity-60">
+        <!-- <svg
+          xmlns="http://www.w3.org/2000/svg"
+          height="124"
+          width="124"
+          viewBox="0 0 64 64"
+          class="hidden sm:block"
+        >
+          <path
+            fill="#58595b"
+            d="M53.2925301,7.9328089c0.9000282-0.9899368,0.9500198-2.4398704,0.0999832-3.2998095 c-0.8500366-0.8699481-2.3101616-0.8399813-3.3102341,0.0700035l-7.9905586,7.1695948 c-0.5300674,0.4699459-1.2301292,0.7099838-1.8101273,0.6099529l-2.0801659-0.3399477 c-0.6300507-0.1100407-1.3000793,0.1199884-1.7901039,0.6099529l-0.2300606,0.2299681 c-5.1103477-3.3098192-11.6608028-2.8398123-14.3110161-2.6398726c-2.3001518,0.1700354-3.9802628,0.8999758-4.990345,2.1699266 c-0.9300594,1.16992-1.0100822,2.4898558-0.9700403,3.2197971c-3.1402378,3.0298643-2.8602495,6.829648-2.6002216,8.3095484 l-2.5001783,2.1499081c-0.2000265,0.1499538-0.6300497,0.5399475-0.7700129,1.2199039 c-0.1300144,0.6799564,0.0600014,1.3899403,0.5900078,2.1198807c0.0900335,0.1199894,0.1300144,0.2100105,0.1500349,0.2599964 c-0.5400772,0.9599686-0.7200832,1.8999214-0.5500269,2.7898884v0.0099487 c0.1599846,0.8000031,0.4100027,1.3899384,0.7700138,1.7899399c0.0499907,0.0799522,0.0200205,0.4799538-0.2600288,1.0399208 c-0.1599846,0.2999725-0.2400074,0.6299744-0.2299967,0.9599724c0.0100107,0.559967,0.1800051,1.6098976,1.1501064,2.4298592 c1.1100645,0.9399529,2.9201908,1.2299156,5.3703785,0.8599396c0.7000618-0.1099777,1.3300495,0.0700035,1.9401398,0.5399513 c2.6901951,2.0698929,3.7802372,8.6395454,4.0902576,10.9194527c-0.8300152,0.0899582-1.5200672-0.1500168-1.9801216-0.3899956 c-0.4500446-0.2499847-1.020092-0.1699715-1.3901138,0.1899948c-0.3800316,0.3599625-0.4900246,0.9299393-0.2600288,1.3999481 c1.3501339,2.8398094,3.9003029,4.9797096,7.5705471,6.359642C29.3007698,59.5600204,31.8109589,60,34.3911591,60 c0.9800491,0,1.9701118-0.0700035,2.9701843-0.2000008c7.1805649-0.9299431,11.7308769-2.849823,13.9210358-5.8696785 c2.0301094-2.8198547,1.4401016-5.9097137,1.0900421-7.7595901c-0.0499916-0.2399788-0.0899734-0.4599953-0.1300163-0.6699448"
+          />
+        </svg> -->
+     
+     <Image src={image1} alt="nails" class="w-32 h-32 object-cover" />
+      </div>
+
+      <div class="absolute bottom-0 p-5">
+        <p class="text-sm md:text-base">COLOR Rs. 100</p>
+        <p class="text-sm md:text-base">CUT Rs. 200 and up</p>
+        <h1 class="text-base md:text-lg font-semibold flex items-center gap-2">
+          Hair 
+
+        </h1>
+      </div>
+    </div>
+
+    <!-- Nails Services Card -->
+    <div class="w-full md:w-1/3 h-72 relative bg-neutral-100 mb-4 md:mb-0 hover:shadow-lg transition-shadow">
+      <div class="absolute right-0 p-6 opacity-60">
+        <Image src={image2} alt="nails" class="w-32 h-32 object-cover" />
+
+      </div>
+
+      <div class="absolute bottom-0 p-5">
+        <p class="text-sm md:text-base">MANICURE Rs. 45 and up</p>
+        <p class="text-sm md:text-base">THREADING Rs. 50 and up</p>
+        <p class="text-sm md:text-base">PEDICURE Rs. 65 and up</p>
+        <h1 class="text-base md:text-lg font-semibold flex items-center gap-2">
+          Nails
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="m9 18 6-6-6-6"/>
+          </svg>
+        </h1>
+      </div>
+    </div>
+
+    <!-- Makeup Services Card -->
+    <div class="w-full md:w-1/3 h-72 relative bg-neutral-100 mb-4 md:mb-0 hover:shadow-lg transition-shadow">
+      <div class="absolute right-0 p-6 opacity-50">
+        <Image src={image3} alt="nails" class="w-32 h-32 object-cover" />
+
+      </div>
+
+      <div class="absolute bottom-0 p-5">
+        <p class="text-sm md:text-base">MAKE-UP Rs. 200 and up</p>
+        <p class="text-sm md:text-base">EYE MAKE-UP Rs. 75 and up</p>
+        <p class="text-sm md:text-base">LASHES Rs. 50 and up</p>
+        <p class="text-sm md:text-base">THREADING Rs. 40 and up</p>
+        <p class="text-sm md:text-base">EYEBROW SHAPING Rs. 50 and up</p>
+        <p class="text-sm md:text-base">TINTING Rs. 50 and up</p>
+        <h1 class="text-base md:text-lg font-semibold flex items-center gap-2">
+          MakeUp
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="m9 18 6-6-6-6"/>
+          </svg>
+        </h1>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- 
+---
+// ServiceCards.astro
+const services = [
+  {
+    id: 1,
+    category: "Hair",
+    services: [
+      { name: "COLOR", price: "Rs100" },
+      { name: "CUT", price: "Rs200 and up" },
+    ]
+  },
+  {
+    id: 2,
+    category: "Nails",
+    services: [
+      { name: "MANICURE", price: "Rs45 and up" },
+      { name: "PEDICURE", price: "Rs65 and up" },
+      { name: "THREADING", price: "Rs50 and up" },
+    ]
+  },
+  {
+    id: 3,
+    category: "Mackup",
+    services: [
+      { name: "MAKE-UP", price: "Rs200 and up" },
+      { name: "EYE MAKE-UP", price: "Rs75 and up" },
+      { name: "LASHES", price: "Rs50 and up" },
+      { name: "THREADING", price: "Rs40 and up" },
+      { name: "EYEBROW SHAPING", price: "Rs50 and up" },
+      { name: "TINTING", price: "Rs50 and up" },
+    ]
+  }
+];
+---
+
+<div class="container mx-auto p-8">
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+    {services.map((service) => (
+      <div class="bg-neutral-50 rounded-lg shadow-sm hover:bg-neutral-100 transition-colors duration-300">
+        {/* Icon Container */}
+        <div class="flex justify-end p-4 border-b">
+          {service.id === 1 && (
+            <svg class="w-24 h-24 text-neutral-300" viewBox="0 0 85.11 122.88">
+              <path fill-rule="evenodd" d="M61.44,48c13.27-16.35-2-46.13-18.93-45.74-24.82-8.38-38.78,8-41.82,27C-1.45,42.57,1,59.09,13.61,66.31,17.85,72,22,75.76,26.07,78c4.84,2.65,9.46,3.06,13.73,1.74a18.37,18.37,0,0,0,3.6-1.57c-.74,18.94,4.58,33.93,21.44,37.92-3.16-3.38-3.47-7.71-2.23-12,1.91-6.55,5.55-8.32,7.66-12.8A20.72,20.72,0,0,0,72,83.18C71.6,74.69,65.41,66,58.22,58.53A73.12,73.12,0,0,0,61.41,48.4l0-.24V48Z"/>
+            </svg>
+          )}
+          {service.id === 2 && (
+            <svg class="w-24 h-24 text-neutral-300" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M20 7.5v9l-5 5H9l-5-5v-9L9 3h6l5 4.5z" />
+            </svg>
+          )}
+          {service.id === 3 && (
+            <svg class="w-24 h-24 text-neutral-300" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="10" />
+              <path d="M8 14s1.5 2 4 2 4-2 4-2" />
+              <line x1="9" y1="9" x2="9.01" y2="9" />
+              <line x1="15" y1="9" x2="15.01" y2="9" />
+            </svg>
+          )}
+        </div>
+
+        {/* Service List */}
+        <div class="p-6">
+          <h3 class="text-xl font-semibold mb-4 flex items-center gap-2">
+            {service.category}
+            <span class="text-neutral-400">›</span>
+          </h3>
+          
+          <div class="space-y-2">
+            {service.services.map((item) => (
+              <div class="flex justify-between items-center text-sm">
+                <span class="text-neutral-600">{item.name}</span>
+                <span class="text-neutral-600">{item.price}</span>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+    ))}
+  </div>
+</div>
+
+<style>
+  /* Add any additional custom styles here */
+  .container {
+    max-width: 1200px;
+  }
+</style> -->
